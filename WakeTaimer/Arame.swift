@@ -19,7 +19,11 @@ class Arame : NSObject, AnyObject , AVAudioPlayerDelegate{
     var timer = NSTimer()
     var audioPlayer: AVAudioPlayer?
     
-    init (strhour:String,strmin:String){
+    override init(){
+    
+    }
+    
+    func SetTimer (strhour:String,strmin:String){
         tagetTimehour = strhour.toInt()!
         tagetTimemin = strmin.toInt()!
         //AboutAudio()
